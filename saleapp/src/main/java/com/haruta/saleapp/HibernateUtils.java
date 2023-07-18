@@ -5,9 +5,10 @@
 package com.haruta.saleapp;
 
 import com.haruta.pojo.Category;
-import com.haruta.pojo.Comment;
+import com.haruta.pojo.OrderDetail;
 import com.haruta.pojo.ProdTag;
 import com.haruta.pojo.Product;
+import com.haruta.pojo.SaleOrder;
 import com.haruta.pojo.Tag;
 import com.haruta.pojo.User;
 import java.util.Properties;
@@ -40,10 +41,11 @@ public class HibernateUtils {
         
         conf.addAnnotatedClass(Category.class);
         conf.addAnnotatedClass(Product.class);
-        conf.addAnnotatedClass(Comment.class);
         conf.addAnnotatedClass(ProdTag.class);
         conf.addAnnotatedClass(User.class);
         conf.addAnnotatedClass(Tag.class);
+        conf.addAnnotatedClass(SaleOrder.class);
+        conf.addAnnotatedClass(OrderDetail.class);
         
         ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder().applySettings(conf.getProperties()).build();
         

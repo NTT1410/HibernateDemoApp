@@ -8,6 +8,8 @@
     <class>com.haruta.pojo.Category</class>
     <class>com.haruta.pojo.User</class>
     <class>com.haruta.pojo.ProdTag</class>
+    <class>com.haruta.pojo.OrderDetail</class>
+    <class>com.haruta.pojo.SaleOrder</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/saledb?zeroDateTimeBehavior=CONVERT_TO_NULL"/>
       <property name="javax.persistence.jdbc.user" value="root"/>
